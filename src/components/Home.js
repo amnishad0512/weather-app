@@ -5,7 +5,8 @@ const Home = ({ detail }) => {
     <div className="w-75 mx-auto">
       <div className="row mb-5">
         <div className="col-4 offset-4">
-          <img src={detail.img} alt="icon" /> <h2>{detail.weather}</h2>
+          {detail.img && <img src={detail.img} alt="icon" />}{" "}
+          <h2>{detail.weather}</h2>
         </div>
       </div>
       <div className="row">
